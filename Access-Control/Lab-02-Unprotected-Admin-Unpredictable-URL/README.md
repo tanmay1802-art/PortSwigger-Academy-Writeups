@@ -36,3 +36,16 @@ I appended `/admin-as7g00` to the lab URL. The admin panel loaded without any lo
 
 ### 5. Delete the User `carlos`
 I clicked **Delete** next to `carlos`. The application confirmed
+
+I clicked **Delete** next to `carlos`. The application confirmed "User deleted successfully!" and the lab was marked as solved.
+
+![Lab solved](./solved.png)
+
+## 🛡️ Remediation (How to Fix)
+1. **Enforce access control on the server:** Every admin function must check that the user is authenticated and has the admin role.
+2. **Do not rely on obscurity:** A hard-to-guess URL is not a security control, because URLs leak through source code, logs, and referrer headers.
+3. **Do not expose sensitive paths in client-side code:** Anything sent to the browser can be read by any user.
+4. **Deny by default:** Require explicit permission for every resource.
+
+---
+*Writeup by Tanmay Sarkar Emon*
