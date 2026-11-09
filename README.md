@@ -8,3 +8,4 @@ Welcome to my repository! Here I document my journey of solving web security lab
 |---|-------|-----|---------|
 | 01 | Path Traversal | File path traversal, simple case | [Read writeup](./Path-Traversal/README.md) |
 | 02 | Access Control | Unprotected admin functionality | [Read writeup](./Access-Control/README.md) |
+| 03 | Access Control | Unprotected admin functionality with unpredictable URL | [Read writeup](./Access-Control/Lab-02-Unprotected-Admin-Unpredictable-URL/README.md) |
