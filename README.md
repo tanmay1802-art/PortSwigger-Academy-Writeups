@@ -7,3 +7,4 @@ Welcome to my repository! Here I document my journey of solving web security lab
 | # | Topic | Lab | Writeup |
 |---|-------|-----|---------|
 | 01 | Path Traversal | File path traversal, simple case | [Read writeup](./Path-Traversal/README.md) |
+| 02 | Access Control | Unprotected admin functionality | [Read writeup](./Access-Control/README.md) |
